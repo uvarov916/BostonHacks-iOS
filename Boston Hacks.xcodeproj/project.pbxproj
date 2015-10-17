@@ -8,20 +8,52 @@
 
 /* Begin PBXBuildFile section */
 		6622A73B1BC90F33002B673A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6622A73A1BC90F33002B673A /* AppDelegate.swift */; };
-		6622A73D1BC90F33002B673A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6622A73C1BC90F33002B673A /* ViewController.swift */; };
 		6622A7401BC90F33002B673A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6622A73E1BC90F33002B673A /* Main.storyboard */; };
 		6622A7421BC90F33002B673A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6622A7411BC90F33002B673A /* Assets.xcassets */; };
 		6622A7451BC90F33002B673A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6622A7431BC90F33002B673A /* LaunchScreen.storyboard */; };
+		6622A7521BC915BC002B673A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6622A7511BC915BC002B673A /* AudioToolbox.framework */; };
+		6622A7541BC915CE002B673A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6622A7531BC915CE002B673A /* CFNetwork.framework */; };
+		6622A7561BC915D6002B673A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6622A7551BC915D6002B673A /* CoreGraphics.framework */; };
+		6622A7581BC915DF002B673A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6622A7571BC915DF002B673A /* CoreLocation.framework */; };
+		6622A75A1BC915E8002B673A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6622A7591BC915E8002B673A /* QuartzCore.framework */; };
+		6622A75C1BC915EF002B673A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6622A75B1BC915EF002B673A /* Security.framework */; };
+		6622A75E1BC915F5002B673A /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6622A75D1BC915F5002B673A /* StoreKit.framework */; };
+		6622A7601BC915FE002B673A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6622A75F1BC915FE002B673A /* SystemConfiguration.framework */; };
+		6622A7621BC9162C002B673A /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6622A7611BC9162C002B673A /* libsqlite3.tbd */; };
+		6622A7641BC91633002B673A /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6622A7631BC91633002B673A /* libz.tbd */; };
+		6622A7661BC9189B002B673A /* AnnouncementsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6622A7651BC9189B002B673A /* AnnouncementsTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		666441551BCCE9F40065F0FA /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666441541BCCE9F40065F0FA /* EventTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		666441571BCCEA100065F0FA /* EventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666441561BCCEA100065F0FA /* EventsTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		668D75801BCB709500914A72 /* AnnouncementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668D757F1BCB709500914A72 /* AnnouncementTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		66DC19C61BD1DAD700D93CF2 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66DC19C41BD1DAD700D93CF2 /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
+		66DC19C71BD1DAD700D93CF2 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66DC19C51BD1DAD700D93CF2 /* Parse.framework */; settings = {ASSET_TAGS = (); }; };
+		66DC19C91BD21F1800D93CF2 /* EventsTableViewCustomHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DC19C81BD21F1800D93CF2 /* EventsTableViewCustomHeaderCell.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6622A7371BC90F33002B673A /* Boston Hacks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Boston Hacks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6622A73A1BC90F33002B673A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6622A73C1BC90F33002B673A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6622A73F1BC90F33002B673A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6622A7411BC90F33002B673A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6622A7441BC90F33002B673A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6622A7461BC90F33002B673A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6622A7511BC915BC002B673A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		6622A7531BC915CE002B673A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		6622A7551BC915D6002B673A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6622A7571BC915DF002B673A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		6622A7591BC915E8002B673A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		6622A75B1BC915EF002B673A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		6622A75D1BC915F5002B673A /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		6622A75F1BC915FE002B673A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		6622A7611BC9162C002B673A /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		6622A7631BC91633002B673A /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		6622A7651BC9189B002B673A /* AnnouncementsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnouncementsTableViewController.swift; sourceTree = "<group>"; };
+		666441541BCCE9F40065F0FA /* EventTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		666441561BCCEA100065F0FA /* EventsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableViewController.swift; sourceTree = "<group>"; };
+		668D757F1BCB709500914A72 /* AnnouncementTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnouncementTableViewCell.swift; sourceTree = "<group>"; };
+		66DC19C41BD1DAD700D93CF2 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		66DC19C51BD1DAD700D93CF2 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		66DC19C81BD21F1800D93CF2 /* EventsTableViewCustomHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableViewCustomHeaderCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +61,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6622A7641BC91633002B673A /* libz.tbd in Frameworks */,
+				6622A7621BC9162C002B673A /* libsqlite3.tbd in Frameworks */,
+				6622A7601BC915FE002B673A /* SystemConfiguration.framework in Frameworks */,
+				6622A75E1BC915F5002B673A /* StoreKit.framework in Frameworks */,
+				6622A75C1BC915EF002B673A /* Security.framework in Frameworks */,
+				6622A75A1BC915E8002B673A /* QuartzCore.framework in Frameworks */,
+				6622A7581BC915DF002B673A /* CoreLocation.framework in Frameworks */,
+				6622A7561BC915D6002B673A /* CoreGraphics.framework in Frameworks */,
+				66DC19C61BD1DAD700D93CF2 /* Bolts.framework in Frameworks */,
+				6622A7541BC915CE002B673A /* CFNetwork.framework in Frameworks */,
+				66DC19C71BD1DAD700D93CF2 /* Parse.framework in Frameworks */,
+				6622A7521BC915BC002B673A /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,14 +98,38 @@
 		6622A7391BC90F33002B673A /* Boston Hacks */ = {
 			isa = PBXGroup;
 			children = (
-				6622A73A1BC90F33002B673A /* AppDelegate.swift */,
-				6622A73C1BC90F33002B673A /* ViewController.swift */,
 				6622A73E1BC90F33002B673A /* Main.storyboard */,
+				66DC19C81BD21F1800D93CF2 /* EventsTableViewCustomHeaderCell.swift */,
+				6622A73A1BC90F33002B673A /* AppDelegate.swift */,
+				6622A7651BC9189B002B673A /* AnnouncementsTableViewController.swift */,
+				668D757F1BCB709500914A72 /* AnnouncementTableViewCell.swift */,
+				666441561BCCEA100065F0FA /* EventsTableViewController.swift */,
+				666441541BCCE9F40065F0FA /* EventTableViewCell.swift */,
 				6622A7411BC90F33002B673A /* Assets.xcassets */,
 				6622A7431BC90F33002B673A /* LaunchScreen.storyboard */,
 				6622A7461BC90F33002B673A /* Info.plist */,
+				6622A7501BC914B8002B673A /* Frameworks */,
 			);
 			path = "Boston Hacks";
+			sourceTree = "<group>";
+		};
+		6622A7501BC914B8002B673A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				66DC19C41BD1DAD700D93CF2 /* Bolts.framework */,
+				66DC19C51BD1DAD700D93CF2 /* Parse.framework */,
+				6622A7631BC91633002B673A /* libz.tbd */,
+				6622A7611BC9162C002B673A /* libsqlite3.tbd */,
+				6622A75F1BC915FE002B673A /* SystemConfiguration.framework */,
+				6622A75D1BC915F5002B673A /* StoreKit.framework */,
+				6622A75B1BC915EF002B673A /* Security.framework */,
+				6622A7591BC915E8002B673A /* QuartzCore.framework */,
+				6622A7571BC915DF002B673A /* CoreLocation.framework */,
+				6622A7551BC915D6002B673A /* CoreGraphics.framework */,
+				6622A7531BC915CE002B673A /* CFNetwork.framework */,
+				6622A7511BC915BC002B673A /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +163,7 @@
 				TargetAttributes = {
 					6622A7361BC90F33002B673A = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = T36V9EZTBX;
 					};
 				};
 			};
@@ -134,8 +203,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6622A73D1BC90F33002B673A /* ViewController.swift in Sources */,
+				666441551BCCE9F40065F0FA /* EventTableViewCell.swift in Sources */,
+				6622A7661BC9189B002B673A /* AnnouncementsTableViewController.swift in Sources */,
+				66DC19C91BD21F1800D93CF2 /* EventsTableViewCustomHeaderCell.swift in Sources */,
 				6622A73B1BC90F33002B673A /* AppDelegate.swift in Sources */,
+				666441571BCCEA100065F0FA /* EventsTableViewController.swift in Sources */,
+				668D75801BCB709500914A72 /* AnnouncementTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,10 +319,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Boston",
+					Hacks,
+					"$(PROJECT_DIR)/Boston",
+					Hacks,
+					"$(PROJECT_DIR)/Boston",
+					Hacks,
+				);
 				INFOPLIST_FILE = "Boston Hacks/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.ivn.Boston-Hacks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -257,10 +342,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Boston",
+					Hacks,
+					"$(PROJECT_DIR)/Boston",
+					Hacks,
+					"$(PROJECT_DIR)/Boston",
+					Hacks,
+				);
 				INFOPLIST_FILE = "Boston Hacks/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.ivn.Boston-Hacks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -283,6 +380,7 @@
 				6622A74B1BC90F33002B673A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
