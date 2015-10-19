@@ -26,7 +26,7 @@ class EventsTableViewController: UITableViewController {
         self.refresh.addTarget(self, action: "didRefreshList", forControlEvents: .ValueChanged)
         
         tableView.rowHeight = UITableViewAutomaticDimension
-        tableView.estimatedRowHeight = 98.0
+        tableView.estimatedRowHeight = 70.0
         
         tableView.separatorStyle = UITableViewCellSeparatorStyle.None
         tableView.tableFooterView = UIView.init(frame: CGRectZero)
@@ -146,15 +146,14 @@ class EventsTableViewController: UITableViewController {
         let dayNight = dateDayNightFormatter.stringFromDate(unformattedDate)
         
         
-//        if (location == "") {
-//            cell.eventLocation.hidden = true
-//            cell.locationBottomConstraint.active = false
-//        }
-//        else {
-//            cell.eventLocation.hidden = false
-//            cell.locationBottomConstraint.active = true
-//        }
-        cell.eventLocation.text = location
+        if (location == "") {
+            cell.eventLocation.hidden = true
+        }
+        else {
+            cell.eventLocation.text = location
+            cell.eventLocation.hidden = false
+        }
+        // cell.eventLocation.text = location
         cell.eventTitle.text = title
         cell.eventTime.text = time
         cell.eventDayNight.text = dayNight

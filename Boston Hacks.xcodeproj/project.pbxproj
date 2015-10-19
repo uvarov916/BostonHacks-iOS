@@ -25,8 +25,8 @@
 		666441551BCCE9F40065F0FA /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666441541BCCE9F40065F0FA /* EventTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		666441571BCCEA100065F0FA /* EventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666441561BCCEA100065F0FA /* EventsTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		668D75801BCB709500914A72 /* AnnouncementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668D757F1BCB709500914A72 /* AnnouncementTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
-		66DC19C61BD1DAD700D93CF2 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66DC19C41BD1DAD700D93CF2 /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
-		66DC19C71BD1DAD700D93CF2 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66DC19C51BD1DAD700D93CF2 /* Parse.framework */; settings = {ASSET_TAGS = (); }; };
+		66D84A9B1BD45A9F007A4BEC /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66D84A991BD45A9F007A4BEC /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
+		66D84A9C1BD45A9F007A4BEC /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66D84A9A1BD45A9F007A4BEC /* Parse.framework */; settings = {ASSET_TAGS = (); }; };
 		66DC19C91BD21F1800D93CF2 /* EventsTableViewCustomHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DC19C81BD21F1800D93CF2 /* EventsTableViewCustomHeaderCell.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
@@ -51,8 +51,8 @@
 		666441541BCCE9F40065F0FA /* EventTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
 		666441561BCCEA100065F0FA /* EventsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableViewController.swift; sourceTree = "<group>"; };
 		668D757F1BCB709500914A72 /* AnnouncementTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnouncementTableViewCell.swift; sourceTree = "<group>"; };
-		66DC19C41BD1DAD700D93CF2 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
-		66DC19C51BD1DAD700D93CF2 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		66D84A991BD45A9F007A4BEC /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		66D84A9A1BD45A9F007A4BEC /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		66DC19C81BD21F1800D93CF2 /* EventsTableViewCustomHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableViewCustomHeaderCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,9 +69,9 @@
 				6622A75A1BC915E8002B673A /* QuartzCore.framework in Frameworks */,
 				6622A7581BC915DF002B673A /* CoreLocation.framework in Frameworks */,
 				6622A7561BC915D6002B673A /* CoreGraphics.framework in Frameworks */,
-				66DC19C61BD1DAD700D93CF2 /* Bolts.framework in Frameworks */,
+				66D84A9B1BD45A9F007A4BEC /* Bolts.framework in Frameworks */,
 				6622A7541BC915CE002B673A /* CFNetwork.framework in Frameworks */,
-				66DC19C71BD1DAD700D93CF2 /* Parse.framework in Frameworks */,
+				66D84A9C1BD45A9F007A4BEC /* Parse.framework in Frameworks */,
 				6622A7521BC915BC002B673A /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -116,8 +116,8 @@
 		6622A7501BC914B8002B673A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				66DC19C41BD1DAD700D93CF2 /* Bolts.framework */,
-				66DC19C51BD1DAD700D93CF2 /* Parse.framework */,
+				66D84A991BD45A9F007A4BEC /* Bolts.framework */,
+				66D84A9A1BD45A9F007A4BEC /* Parse.framework */,
 				6622A7631BC91633002B673A /* libz.tbd */,
 				6622A7611BC9162C002B673A /* libsqlite3.tbd */,
 				6622A75F1BC915FE002B673A /* SystemConfiguration.framework */,
@@ -329,6 +329,12 @@
 					Hacks,
 					"$(PROJECT_DIR)/Boston",
 					Hacks,
+					"$(PROJECT_DIR)/Boston",
+					Hacks/Frameworks,
+					"$(PROJECT_DIR)/Boston",
+					Hacks/Frameworks,
+					"$(PROJECT_DIR)/Boston",
+					Hacks,
 				);
 				INFOPLIST_FILE = "Boston Hacks/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -350,6 +356,12 @@
 					Hacks,
 					"$(PROJECT_DIR)/Boston",
 					Hacks,
+					"$(PROJECT_DIR)/Boston",
+					Hacks,
+					"$(PROJECT_DIR)/Boston",
+					Hacks/Frameworks,
+					"$(PROJECT_DIR)/Boston",
+					Hacks/Frameworks,
 					"$(PROJECT_DIR)/Boston",
 					Hacks,
 				);
