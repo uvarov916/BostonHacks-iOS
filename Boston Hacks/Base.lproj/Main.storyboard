@@ -312,25 +312,131 @@
             </objects>
             <point key="canvasLocation" x="2794.5" y="-1484"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="dgc-hB-4no">
+        <!--Community-->
+        <scene sceneID="x2y-37-mbc">
             <objects>
-                <viewController id="Ern-LS-3Pf" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y6c-Bh-7Qg"/>
-                        <viewControllerLayoutGuide type="bottom" id="2iC-9b-nNF"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="noF-uI-o2n">
+                <tableViewController id="iBF-fB-fIu" customClass="CommunityTableViewController" customModule="Boston_Hacks" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="77" sectionHeaderHeight="28" sectionFooterHeight="28" id="L49-dh-Gkb">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="kiE-SB-JKY"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Bpz-5p-ni5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="bea-ND-V3J">
+                            <rect key="frame" x="0.0" y="64" width="600" height="244"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="slack_header" translatesAutoresizingMaskIntoConstraints="NO" id="odq-Pd-L34">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="244"/>
+                                    <animations/>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJ9-jO-cql">
+                                    <rect key="frame" x="490" y="189" width="90" height="40"/>
+                                    <animations/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="NZU-Oh-94U"/>
+                                        <constraint firstAttribute="width" constant="90" id="osl-dM-1Wj"/>
+                                    </constraints>
+                                    <size key="titleShadowOffset" width="2.2250738585072014e-308" height="2.2250738585072014e-308"/>
+                                    <state key="normal" title="Join">
+                                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <state key="highlighted">
+                                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="joinSlackButtonDidPress:" destination="iBF-fB-fIu" eventType="touchUpInside" id="cqh-4F-ueZ"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="JJ9-jO-cql" secondAttribute="bottom" constant="15" id="4TA-qr-nBr"/>
+                                <constraint firstAttribute="trailing" secondItem="JJ9-jO-cql" secondAttribute="trailing" constant="20" id="9Bd-zE-N82"/>
+                                <constraint firstAttribute="bottom" secondItem="odq-Pd-L34" secondAttribute="bottom" id="IQJ-2t-H03"/>
+                                <constraint firstItem="odq-Pd-L34" firstAttribute="leading" secondItem="bea-ND-V3J" secondAttribute="leading" id="ZoH-jD-ALf"/>
+                                <constraint firstItem="odq-Pd-L34" firstAttribute="top" secondItem="bea-ND-V3J" secondAttribute="top" id="lGi-mb-HVz"/>
+                                <constraint firstAttribute="trailing" secondItem="odq-Pd-L34" secondAttribute="trailing" id="uN6-mI-DQr"/>
+                            </constraints>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommunityTableViewCell" rowHeight="76" id="k2N-Qx-z5w" customClass="CommunityTableViewCell" customModule="Boston_Hacks" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="336" width="600" height="76"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="k2N-Qx-z5w" id="Kp0-wI-wkq">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="75.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Director" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O8F-hz-f1E">
+                                            <rect key="frame" x="20" y="41" width="462" height="18"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZiU-MQ-5EY">
+                                            <rect key="frame" x="540" y="18" width="40" height="40"/>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="H5f-3w-dgD"/>
+                                                <constraint firstAttribute="width" constant="40" id="SUJ-VJ-2f9"/>
+                                            </constraints>
+                                            <state key="normal" image="Email"/>
+                                        </button>
+                                        <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yOf-rJ-5Br">
+                                            <rect key="frame" x="490" y="18" width="40" height="40"/>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="guo-PO-ayC"/>
+                                                <constraint firstAttribute="width" constant="40" id="oar-03-yHG"/>
+                                            </constraints>
+                                            <state key="normal" image="Twitter"/>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="751" text="Andew Hoang" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4JX-6X-W4g">
+                                            <rect key="frame" x="20" y="18" width="462" height="21"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <animations/>
+                                    <constraints>
+                                        <constraint firstItem="yOf-rJ-5Br" firstAttribute="bottom" secondItem="ZiU-MQ-5EY" secondAttribute="bottom" id="3z9-zL-fD5"/>
+                                        <constraint firstAttribute="bottom" secondItem="O8F-hz-f1E" secondAttribute="bottom" constant="16.5" id="4SN-pW-zDC"/>
+                                        <constraint firstItem="4JX-6X-W4g" firstAttribute="top" secondItem="Kp0-wI-wkq" secondAttribute="top" constant="18" id="9yS-Ix-WLW"/>
+                                        <constraint firstItem="ZiU-MQ-5EY" firstAttribute="centerY" secondItem="Kp0-wI-wkq" secondAttribute="centerY" id="IdT-KD-zqg"/>
+                                        <constraint firstAttribute="trailing" secondItem="ZiU-MQ-5EY" secondAttribute="trailing" constant="20" id="Nlp-Nf-Yrx"/>
+                                        <constraint firstItem="O8F-hz-f1E" firstAttribute="top" secondItem="4JX-6X-W4g" secondAttribute="bottom" constant="2" id="PBd-Gj-Wzt"/>
+                                        <constraint firstItem="ZiU-MQ-5EY" firstAttribute="leading" secondItem="yOf-rJ-5Br" secondAttribute="trailing" constant="10" id="YpH-U2-JpR"/>
+                                        <constraint firstItem="O8F-hz-f1E" firstAttribute="leading" secondItem="4JX-6X-W4g" secondAttribute="leading" id="acA-uM-VZA"/>
+                                        <constraint firstItem="O8F-hz-f1E" firstAttribute="trailing" secondItem="4JX-6X-W4g" secondAttribute="trailing" id="b4N-yQ-Jav"/>
+                                        <constraint firstItem="yOf-rJ-5Br" firstAttribute="leading" secondItem="4JX-6X-W4g" secondAttribute="trailing" constant="8" id="k7a-bV-4T2"/>
+                                        <constraint firstItem="yOf-rJ-5Br" firstAttribute="top" secondItem="ZiU-MQ-5EY" secondAttribute="top" id="oNz-8K-lQm"/>
+                                        <constraint firstItem="4JX-6X-W4g" firstAttribute="leading" secondItem="Kp0-wI-wkq" secondAttribute="leading" constant="20" id="xXB-Zi-MJN"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <animations/>
+                                <connections>
+                                    <outlet property="emailButton" destination="ZiU-MQ-5EY" id="dkM-hM-je2"/>
+                                    <outlet property="personNameLabel" destination="4JX-6X-W4g" id="dbz-kg-WWl"/>
+                                    <outlet property="personRoleLabel" destination="O8F-hz-f1E" id="QBi-xH-Had"/>
+                                    <outlet property="twitterButton" destination="yOf-rJ-5Br" id="rEV-LT-uEh"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="iBF-fB-fIu" id="nGj-Gh-hEN"/>
+                            <outlet property="delegate" destination="iBF-fB-fIu" id="zyY-a6-xql"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Community" id="xfR-Eh-tuR"/>
+                    <connections>
+                        <outlet property="joinSlackButton" destination="JJ9-jO-cql" id="Ebg-SH-inB"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z2r-oX-OHP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2794.5" y="-755"/>
+            <point key="canvasLocation" x="2793" y="-755"/>
         </scene>
         <!--Announcements-->
         <scene sceneID="u8C-KB-VyT">
@@ -525,7 +631,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="Ern-LS-3Pf" kind="relationship" relationship="rootViewController" id="fWl-jV-roh"/>
+                        <segue destination="iBF-fB-fIu" kind="relationship" relationship="rootViewController" id="DbP-pZ-30d"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bgr-LZ-A7J" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -556,10 +662,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Calendar" width="30" height="27"/>
-        <image name="Community" width="34" height="24"/>
-        <image name="Location" width="27" height="26"/>
-        <image name="Megaphone" width="36" height="26"/>
+        <image name="Calendar" width="28" height="25"/>
+        <image name="Community" width="33" height="23"/>
+        <image name="Email" width="23" height="17"/>
+        <image name="Location" width="25" height="24"/>
+        <image name="Megaphone" width="33" height="24"/>
+        <image name="Twitter" width="24" height="20"/>
         <image name="map" width="1128" height="1184"/>
+        <image name="slack_header" width="375" height="244"/>
     </resources>
 </document>
