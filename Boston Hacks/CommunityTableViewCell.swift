@@ -15,13 +15,15 @@ class CommunityTableViewCell: UITableViewCell {
     @IBOutlet weak var twitterButton: UIButton!
     
     override func drawRect(rect: CGRect) {
+        let borderColor = UIColor(red: 233/255.0, green: 31/255.0, blue: 99/255.0, alpha: 1.0).CGColor
+        
         // Set up the email button
-        emailButton.layer.borderColor = UIColor.lightGrayColor().CGColor
+        emailButton.layer.borderColor = borderColor
         emailButton.layer.borderWidth = 1
         emailButton.layer.cornerRadius = 4
         
         // Set up the twitter button
-        twitterButton.layer.borderColor = UIColor.lightGrayColor().CGColor
+        twitterButton.layer.borderColor = borderColor
         twitterButton.layer.borderWidth = 1
         twitterButton.layer.cornerRadius = 4
     }

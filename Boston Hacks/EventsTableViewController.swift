@@ -14,11 +14,16 @@ class EventsTableViewController: UITableViewController {
     
     // Data for the table
     var tableData = []
-    
     var refresh = UIRefreshControl()
+    let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .White)
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Set up the activity indicator (loading spinner)
+        let barButtonItem = UIBarButtonItem(customView: activityIndicator)
+        navigationItem.rightBarButtonItem = barButtonItem
+        activityIndicator.startAnimating()
         
         self.refreshControl = self.refresh
         self.refresh.addTarget(self, action: "didRefreshList", forControlEvents: .ValueChanged)
@@ -35,6 +40,7 @@ class EventsTableViewController: UITableViewController {
             if error == nil {
                 self.tableData = self.splitEvents(objects!)
                 self.tableView.reloadData()
+                self.activityIndicator.stopAnimating()
             }
         }
         

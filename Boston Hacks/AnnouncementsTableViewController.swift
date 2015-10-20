@@ -16,12 +16,16 @@ class AnnouncementsTableViewController: UITableViewController {
     
     // Data for the table
     var tableData = []
-    
     var refresh = UIRefreshControl()
+    let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .White)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Set up the activity indicator (loading spinner)
+        let barButtonItem = UIBarButtonItem(customView: activityIndicator)
+        navigationItem.rightBarButtonItem = barButtonItem
+        activityIndicator.startAnimating()
         
         self.refreshControl = self.refresh
         self.refresh.addTarget(self, action: "didRefreshList", forControlEvents: .ValueChanged)
@@ -36,6 +40,7 @@ class AnnouncementsTableViewController: UITableViewController {
             if error == nil {
                 self.tableData = objects!
                 self.tableView.reloadData()
+                self.activityIndicator.stopAnimating()
             }
         }
         

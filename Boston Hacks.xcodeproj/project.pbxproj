@@ -22,12 +22,12 @@
 		6622A7621BC9162C002B673A /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6622A7611BC9162C002B673A /* libsqlite3.tbd */; };
 		6622A7641BC91633002B673A /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6622A7631BC91633002B673A /* libz.tbd */; };
 		6622A7661BC9189B002B673A /* AnnouncementsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6622A7651BC9189B002B673A /* AnnouncementsTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		663F06441BD6F7C2006C061A /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 663F06421BD6F7C2006C061A /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
+		663F06451BD6F7C2006C061A /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 663F06431BD6F7C2006C061A /* Parse.framework */; settings = {ASSET_TAGS = (); }; };
 		666441551BCCE9F40065F0FA /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666441541BCCE9F40065F0FA /* EventTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		666441571BCCEA100065F0FA /* EventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666441561BCCEA100065F0FA /* EventsTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		668D75801BCB709500914A72 /* AnnouncementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668D757F1BCB709500914A72 /* AnnouncementTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		668DEFC41BD60B2100BBEEFD /* NSDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668DEFC31BD60B2100BBEEFD /* NSDateExtension.swift */; settings = {ASSET_TAGS = (); }; };
-		668DEFC71BD61ADC00BBEEFD /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 668DEFC51BD61ADC00BBEEFD /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
-		668DEFC81BD61ADC00BBEEFD /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 668DEFC61BD61ADC00BBEEFD /* Parse.framework */; settings = {ASSET_TAGS = (); }; };
 		668DEFCB1BD61FE600BBEEFD /* CommunityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668DEFC91BD61FE600BBEEFD /* CommunityTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		668DEFCC1BD61FE600BBEEFD /* CommunityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668DEFCA1BD61FE600BBEEFD /* CommunityTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		66DC19C91BD21F1800D93CF2 /* EventsTableViewCustomHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DC19C81BD21F1800D93CF2 /* EventsTableViewCustomHeaderCell.swift */; settings = {ASSET_TAGS = (); }; };
@@ -51,12 +51,12 @@
 		6622A7611BC9162C002B673A /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		6622A7631BC91633002B673A /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		6622A7651BC9189B002B673A /* AnnouncementsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnouncementsTableViewController.swift; sourceTree = "<group>"; };
+		663F06421BD6F7C2006C061A /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		663F06431BD6F7C2006C061A /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		666441541BCCE9F40065F0FA /* EventTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
 		666441561BCCEA100065F0FA /* EventsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableViewController.swift; sourceTree = "<group>"; };
 		668D757F1BCB709500914A72 /* AnnouncementTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnouncementTableViewCell.swift; sourceTree = "<group>"; };
 		668DEFC31BD60B2100BBEEFD /* NSDateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateExtension.swift; sourceTree = "<group>"; };
-		668DEFC51BD61ADC00BBEEFD /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
-		668DEFC61BD61ADC00BBEEFD /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		668DEFC91BD61FE600BBEEFD /* CommunityTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommunityTableViewController.swift; sourceTree = "<group>"; };
 		668DEFCA1BD61FE600BBEEFD /* CommunityTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommunityTableViewCell.swift; sourceTree = "<group>"; };
 		66DC19C81BD21F1800D93CF2 /* EventsTableViewCustomHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableViewCustomHeaderCell.swift; sourceTree = "<group>"; };
@@ -75,9 +75,9 @@
 				6622A75A1BC915E8002B673A /* QuartzCore.framework in Frameworks */,
 				6622A7581BC915DF002B673A /* CoreLocation.framework in Frameworks */,
 				6622A7561BC915D6002B673A /* CoreGraphics.framework in Frameworks */,
-				668DEFC71BD61ADC00BBEEFD /* Bolts.framework in Frameworks */,
+				663F06441BD6F7C2006C061A /* Bolts.framework in Frameworks */,
 				6622A7541BC915CE002B673A /* CFNetwork.framework in Frameworks */,
-				668DEFC81BD61ADC00BBEEFD /* Parse.framework in Frameworks */,
+				663F06451BD6F7C2006C061A /* Parse.framework in Frameworks */,
 				6622A7521BC915BC002B673A /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -125,8 +125,8 @@
 		6622A7501BC914B8002B673A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				668DEFC51BD61ADC00BBEEFD /* Bolts.framework */,
-				668DEFC61BD61ADC00BBEEFD /* Parse.framework */,
+				663F06421BD6F7C2006C061A /* Bolts.framework */,
+				663F06431BD6F7C2006C061A /* Parse.framework */,
 				6622A7631BC91633002B673A /* libz.tbd */,
 				6622A7611BC9162C002B673A /* libsqlite3.tbd */,
 				6622A75F1BC915FE002B673A /* SystemConfiguration.framework */,
@@ -351,6 +351,10 @@
 					Hacks,
 					"$(PROJECT_DIR)/Boston",
 					Hacks,
+					"$(PROJECT_DIR)/Boston",
+					Hacks,
+					"$(PROJECT_DIR)/Boston",
+					Hacks,
 				);
 				INFOPLIST_FILE = "Boston Hacks/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -379,6 +383,10 @@
 					Hacks/Frameworks,
 					"$(PROJECT_DIR)/Boston",
 					Hacks/Frameworks,
+					"$(PROJECT_DIR)/Boston",
+					Hacks,
+					"$(PROJECT_DIR)/Boston",
+					Hacks,
 					"$(PROJECT_DIR)/Boston",
 					Hacks,
 					"$(PROJECT_DIR)/Boston",
