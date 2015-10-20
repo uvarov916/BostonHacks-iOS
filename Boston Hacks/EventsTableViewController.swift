@@ -19,8 +19,6 @@ class EventsTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.navigationController?.navigationBar.topItem?.title = "Schedule"
         
         self.refreshControl = self.refresh
         self.refresh.addTarget(self, action: "didRefreshList", forControlEvents: .ValueChanged)

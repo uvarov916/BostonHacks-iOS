@@ -10,6 +10,8 @@ import UIKit
 import Parse
 
 
+
+
 class AnnouncementsTableViewController: UITableViewController {
     
     // Data for the table
@@ -20,7 +22,6 @@ class AnnouncementsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationController?.navigationBar.topItem?.title = "Announcements"
         
         self.refreshControl = self.refresh
         self.refresh.addTarget(self, action: "didRefreshList", forControlEvents: .ValueChanged)
@@ -30,6 +31,7 @@ class AnnouncementsTableViewController: UITableViewController {
         tableView.tableFooterView = UIView.init(frame: CGRectZero)
         
         let announcementsQuery = PFQuery(className: "Announcements")
+        announcementsQuery.orderByDescending("createdAt")
         announcementsQuery.findObjectsInBackgroundWithBlock { (objects: [PFObject]?, error: NSError?) -> Void in
             if error == nil {
                 self.tableData = objects!
@@ -42,6 +44,7 @@ class AnnouncementsTableViewController: UITableViewController {
     func didRefreshList() {
         
         let announcementsQuery = PFQuery(className: "Announcements")
+        announcementsQuery.orderByDescending("createdAt")
         announcementsQuery.findObjectsInBackgroundWithBlock { (objects: [PFObject]?, error: NSError?) -> Void in
             if error == nil {
                 self.tableData = objects!
@@ -68,6 +71,8 @@ class AnnouncementsTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return tableData.count
     }
+    
+    
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -78,10 +83,14 @@ class AnnouncementsTableViewController: UITableViewController {
         
         let title  = announcement["title"] as! String
         let description = announcement["description"] as! String
+        let timePosted = announcement.createdAt
+        
+        
+        let timeSincePosted = NSDate().offsetFrom(timePosted!!)
         
         cell.announcementTile.text = title
         cell.announcementDescription.text = description
-        cell.announcementTime.text = "20m"
+        cell.announcementTime.text = timeSincePosted
         
         /*cell.textLabel!.text = title
         cell.detailTextLabel!.text = description*/

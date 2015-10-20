@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15B38b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ljY-WD-EUg">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Events Table View Controller-->
+        <!--Schedule-->
         <scene sceneID="GA5-W5-woA">
             <objects>
                 <tableViewController id="RVn-ps-bBg" customClass="EventsTableViewController" customModule="Boston_Hacks" customModuleProvider="target" sceneMemberID="viewController">
@@ -244,13 +246,13 @@
                             <outlet property="delegate" destination="RVn-ps-bBg" id="4cl-jw-LMj"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="e0v-cg-1O1"/>
+                    <navigationItem key="navigationItem" title="Schedule" id="e0v-cg-1O1"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bzt-Hj-r81" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2793" y="675"/>
         </scene>
-        <!--View Controller-->
+        <!--Maps-->
         <scene sceneID="dOF-a9-olp">
             <objects>
                 <viewController id="HhV-F1-sYs" sceneMemberID="viewController">
@@ -261,34 +263,54 @@
                     <view key="view" contentMode="scaleToFill" id="viX-Jr-bAW">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map" translatesAutoresizingMaskIntoConstraints="NO" id="8GC-FD-cVA">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8GC-FD-cVA" firstAttribute="leading" secondItem="viX-Jr-bAW" secondAttribute="leadingMargin" constant="-4" id="8B4-c4-B4O"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8GC-FD-cVA" secondAttribute="trailing" constant="-5" id="9Re-SR-vSD"/>
+                            <constraint firstItem="8GC-FD-cVA" firstAttribute="centerX" secondItem="viX-Jr-bAW" secondAttribute="centerX" id="CcT-7S-zGo"/>
+                            <constraint firstItem="8GC-FD-cVA" firstAttribute="centerY" secondItem="viX-Jr-bAW" secondAttribute="centerY" id="cKr-Kn-h4D"/>
+                            <constraint firstItem="0Gb-0Q-nJA" firstAttribute="top" secondItem="8GC-FD-cVA" secondAttribute="bottom" constant="22" id="q2R-SS-xbp"/>
+                            <constraint firstItem="8GC-FD-cVA" firstAttribute="top" secondItem="z24-ww-YFu" secondAttribute="bottom" constant="7" id="wly-jN-yce"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="8GC-FD-cVA"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="q2R-SS-xbp"/>
+                                <exclude reference="8B4-c4-B4O"/>
+                                <exclude reference="9Re-SR-vSD"/>
+                                <exclude reference="CcT-7S-zGo"/>
+                                <exclude reference="cKr-Kn-h4D"/>
+                                <exclude reference="wly-jN-yce"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="8GC-FD-cVA"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="q2R-SS-xbp"/>
+                                <include reference="8B4-c4-B4O"/>
+                                <include reference="9Re-SR-vSD"/>
+                                <include reference="CcT-7S-zGo"/>
+                                <include reference="cKr-Kn-h4D"/>
+                                <include reference="wly-jN-yce"/>
+                            </mask>
+                        </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="Of2-0X-6Z6"/>
+                    <navigationItem key="navigationItem" title="Maps" id="Of2-0X-6Z6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qAc-cN-CIf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2794.5" y="-1484"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="VMa-L8-1mw">
-            <objects>
-                <viewController id="h0u-Dy-tnY" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="c2p-dc-8Ao"/>
-                        <viewControllerLayoutGuide type="bottom" id="g4c-uZ-y5v"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="9aJ-uM-L7i">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="iep-JJ-MdL"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6T8-sI-qKg" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2794.5" y="1413"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="dgc-hB-4no">
@@ -310,7 +332,7 @@
             </objects>
             <point key="canvasLocation" x="2794.5" y="-755"/>
         </scene>
-        <!--Announcements Table View Controller-->
+        <!--Announcements-->
         <scene sceneID="u8C-KB-VyT">
             <objects>
                 <tableViewController id="HMp-PN-ygG" customClass="AnnouncementsTableViewController" customModule="Boston_Hacks" customModuleProvider="target" sceneMemberID="viewController">
@@ -416,7 +438,7 @@
                             <outlet property="delegate" destination="HMp-PN-ygG" id="83E-LS-seV"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Qdc-hJ-t41"/>
+                    <navigationItem key="navigationItem" title="Announcements" id="Qdc-hJ-t41"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c7H-tY-Rex" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -434,11 +456,10 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="hny-be-u6k" kind="relationship" relationship="viewControllers" id="AxF-6b-QKD"/>
-                        <segue destination="IMD-Am-Suv" kind="relationship" relationship="viewControllers" id="3JW-2n-eYf"/>
-                        <segue destination="N2J-HX-nC8" kind="relationship" relationship="viewControllers" id="aad-Hl-idL"/>
-                        <segue destination="k2D-dD-OZJ" kind="relationship" relationship="viewControllers" id="7Np-2d-pDs"/>
                         <segue destination="5f6-02-KV2" kind="relationship" relationship="viewControllers" id="6Ek-rH-cWy"/>
+                        <segue destination="hny-be-u6k" kind="relationship" relationship="viewControllers" id="AxF-6b-QKD"/>
+                        <segue destination="k2D-dD-OZJ" kind="relationship" relationship="viewControllers" id="7Np-2d-pDs"/>
+                        <segue destination="N2J-HX-nC8" kind="relationship" relationship="viewControllers" id="aad-Hl-idL"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NC3-vZ-Wzx" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -516,7 +537,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hny-be-u6k" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="Calendar" id="6Ib-0j-yUf">
-                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                        <inset key="imageInsets" minX="0.0" minY="4" maxX="0.0" maxY="-4"/>
                     </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="8TV-OR-DzJ">
@@ -533,34 +554,12 @@
             </objects>
             <point key="canvasLocation" x="1866" y="675"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Ugj-4h-3tL">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IMD-Am-Suv" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="Clock" id="oSI-V2-pJm">
-                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
-                    </tabBarItem>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="l4P-tt-Urg">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="h0u-Dy-tnY" kind="relationship" relationship="rootViewController" id="C8x-zl-yih"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="prN-fP-mMy" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1866" y="1405"/>
-        </scene>
     </scenes>
     <resources>
-        <image name="Calendar" width="23" height="23"/>
-        <image name="Clock" width="24" height="24"/>
-        <image name="Community" width="24" height="20"/>
-        <image name="Location" width="16" height="24"/>
-        <image name="Megaphone" width="27" height="22"/>
+        <image name="Calendar" width="30" height="27"/>
+        <image name="Community" width="34" height="24"/>
+        <image name="Location" width="27" height="26"/>
+        <image name="Megaphone" width="36" height="26"/>
+        <image name="map" width="1128" height="1184"/>
     </resources>
 </document>
