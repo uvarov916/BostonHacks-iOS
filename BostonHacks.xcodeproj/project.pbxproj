@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		661A42331BD84B5C003D8D77 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 661A42311BD84B5C003D8D77 /* Bolts.framework */; };
+		661A42341BD84B5C003D8D77 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 661A42321BD84B5C003D8D77 /* Parse.framework */; };
 		6622A73B1BC90F33002B673A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6622A73A1BC90F33002B673A /* AppDelegate.swift */; };
 		6622A7401BC90F33002B673A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6622A73E1BC90F33002B673A /* Main.storyboard */; };
 		6622A7421BC90F33002B673A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6622A7411BC90F33002B673A /* Assets.xcassets */; };
@@ -21,19 +23,19 @@
 		6622A7601BC915FE002B673A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6622A75F1BC915FE002B673A /* SystemConfiguration.framework */; };
 		6622A7621BC9162C002B673A /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6622A7611BC9162C002B673A /* libsqlite3.tbd */; };
 		6622A7641BC91633002B673A /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6622A7631BC91633002B673A /* libz.tbd */; };
-		6622A7661BC9189B002B673A /* AnnouncementsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6622A7651BC9189B002B673A /* AnnouncementsTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		663F06441BD6F7C2006C061A /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 663F06421BD6F7C2006C061A /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
-		663F06451BD6F7C2006C061A /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 663F06431BD6F7C2006C061A /* Parse.framework */; settings = {ASSET_TAGS = (); }; };
-		666441551BCCE9F40065F0FA /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666441541BCCE9F40065F0FA /* EventTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
-		666441571BCCEA100065F0FA /* EventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666441561BCCEA100065F0FA /* EventsTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		668D75801BCB709500914A72 /* AnnouncementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668D757F1BCB709500914A72 /* AnnouncementTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
-		668DEFC41BD60B2100BBEEFD /* NSDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668DEFC31BD60B2100BBEEFD /* NSDateExtension.swift */; settings = {ASSET_TAGS = (); }; };
-		668DEFCB1BD61FE600BBEEFD /* CommunityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668DEFC91BD61FE600BBEEFD /* CommunityTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		668DEFCC1BD61FE600BBEEFD /* CommunityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668DEFCA1BD61FE600BBEEFD /* CommunityTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
-		66DC19C91BD21F1800D93CF2 /* EventsTableViewCustomHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DC19C81BD21F1800D93CF2 /* EventsTableViewCustomHeaderCell.swift */; settings = {ASSET_TAGS = (); }; };
+		6622A7661BC9189B002B673A /* AnnouncementsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6622A7651BC9189B002B673A /* AnnouncementsTableViewController.swift */; };
+		666441551BCCE9F40065F0FA /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666441541BCCE9F40065F0FA /* EventTableViewCell.swift */; };
+		666441571BCCEA100065F0FA /* EventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666441561BCCEA100065F0FA /* EventsTableViewController.swift */; };
+		668D75801BCB709500914A72 /* AnnouncementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668D757F1BCB709500914A72 /* AnnouncementTableViewCell.swift */; };
+		668DEFC41BD60B2100BBEEFD /* NSDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668DEFC31BD60B2100BBEEFD /* NSDateExtension.swift */; };
+		668DEFCB1BD61FE600BBEEFD /* CommunityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668DEFC91BD61FE600BBEEFD /* CommunityTableViewController.swift */; };
+		668DEFCC1BD61FE600BBEEFD /* CommunityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668DEFCA1BD61FE600BBEEFD /* CommunityTableViewCell.swift */; };
+		66DC19C91BD21F1800D93CF2 /* EventsTableViewCustomHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DC19C81BD21F1800D93CF2 /* EventsTableViewCustomHeaderCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		661A42311BD84B5C003D8D77 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		661A42321BD84B5C003D8D77 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		6622A7371BC90F33002B673A /* Boston Hacks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Boston Hacks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6622A73A1BC90F33002B673A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6622A73F1BC90F33002B673A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -51,8 +53,6 @@
 		6622A7611BC9162C002B673A /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		6622A7631BC91633002B673A /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		6622A7651BC9189B002B673A /* AnnouncementsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnouncementsTableViewController.swift; sourceTree = "<group>"; };
-		663F06421BD6F7C2006C061A /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
-		663F06431BD6F7C2006C061A /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		666441541BCCE9F40065F0FA /* EventTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
 		666441561BCCEA100065F0FA /* EventsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableViewController.swift; sourceTree = "<group>"; };
 		668D757F1BCB709500914A72 /* AnnouncementTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnouncementTableViewCell.swift; sourceTree = "<group>"; };
@@ -75,9 +75,9 @@
 				6622A75A1BC915E8002B673A /* QuartzCore.framework in Frameworks */,
 				6622A7581BC915DF002B673A /* CoreLocation.framework in Frameworks */,
 				6622A7561BC915D6002B673A /* CoreGraphics.framework in Frameworks */,
-				663F06441BD6F7C2006C061A /* Bolts.framework in Frameworks */,
+				661A42331BD84B5C003D8D77 /* Bolts.framework in Frameworks */,
 				6622A7541BC915CE002B673A /* CFNetwork.framework in Frameworks */,
-				663F06451BD6F7C2006C061A /* Parse.framework in Frameworks */,
+				661A42341BD84B5C003D8D77 /* Parse.framework in Frameworks */,
 				6622A7521BC915BC002B673A /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -125,8 +125,8 @@
 		6622A7501BC914B8002B673A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				663F06421BD6F7C2006C061A /* Bolts.framework */,
-				663F06431BD6F7C2006C061A /* Parse.framework */,
+				661A42311BD84B5C003D8D77 /* Bolts.framework */,
+				661A42321BD84B5C003D8D77 /* Parse.framework */,
 				6622A7631BC91633002B673A /* libz.tbd */,
 				6622A7611BC9162C002B673A /* libsqlite3.tbd */,
 				6622A75F1BC915FE002B673A /* SystemConfiguration.framework */,
@@ -176,7 +176,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6622A7321BC90F33002B673A /* Build configuration list for PBXProject "Boston Hacks" */;
+			buildConfigurationList = 6622A7321BC90F33002B673A /* Build configuration list for PBXProject "BostonHacks" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -355,6 +355,10 @@
 					Hacks,
 					"$(PROJECT_DIR)/Boston",
 					Hacks,
+					"$(PROJECT_DIR)/Boston",
+					Hacks,
+					"$(PROJECT_DIR)/Boston",
+					Hacks,
 				);
 				INFOPLIST_FILE = "Boston Hacks/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -393,6 +397,10 @@
 					Hacks,
 					"$(PROJECT_DIR)/Boston",
 					Hacks,
+					"$(PROJECT_DIR)/Boston",
+					Hacks,
+					"$(PROJECT_DIR)/Boston",
+					Hacks,
 				);
 				INFOPLIST_FILE = "Boston Hacks/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -406,7 +414,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6622A7321BC90F33002B673A /* Build configuration list for PBXProject "Boston Hacks" */ = {
+		6622A7321BC90F33002B673A /* Build configuration list for PBXProject "BostonHacks" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6622A7471BC90F33002B673A /* Debug */,

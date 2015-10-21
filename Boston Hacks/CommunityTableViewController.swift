@@ -96,7 +96,7 @@ class CommunityTableViewController: UITableViewController {
         
         // Disable the buttons if there are no twitter/ email info
         if twitter == "" {
-            cell.twitterButton.enabled = false
+            cell.twitterButton.hidden = true
         }
         if email == "" {
             cell.emailButton.enabled = false
