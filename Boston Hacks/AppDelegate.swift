@@ -55,9 +55,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject], fetchCompletionHandler completionHandler: (UIBackgroundFetchResult) -> Void) {
         
-        if self.window!.rootViewController as? UITabBarController != nil {
-            let tababarController = self.window!.rootViewController as! UITabBarController
-            tababarController.selectedIndex = 0
+        let state = UIApplication.sharedApplication().applicationState
+        if (state == UIApplicationState.Background || state == UIApplicationState.Inactive) {
+            if self.window!.rootViewController as? UITabBarController != nil {
+                let tababarController = self.window!.rootViewController as! UITabBarController
+                tababarController.selectedIndex = 0
+            }
         }
         
         completionHandler(UIBackgroundFetchResult.NoData)
