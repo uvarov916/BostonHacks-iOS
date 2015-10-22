@@ -50,19 +50,19 @@ class AnnouncementsTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("AnnouncementCell", forIndexPath: indexPath) as! AnnouncementTableViewCell
         
         // Get details about announcement
-        let announcement = self.tableData[indexPath.row]
-        let title  = announcement["title"] as! String
+        let announcement = tableData[indexPath.row]
+        let announcementTitle = announcement["title"] as! String
         let description = announcement["description"] as! String
-        let timePosted = announcement.createdAt
+        let timePosted =  announcement.createdAt
         let timeSincePosted = NSDate().offsetFrom(timePosted!!)
         
         // Handle empty title
-        if title == "" {
-            title == "No title"
+        if announcementTitle == "" {
+            announcementTitle == "No title"
         }
         
         // Display details in cell
-        cell.announcementTile.text = title
+        cell.announcementTile.text = announcementTitle
         cell.announcementDescription.text = description
         cell.announcementTime.text = timeSincePosted
 
