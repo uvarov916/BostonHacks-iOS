@@ -68,7 +68,7 @@ class CommunityTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("CommunityTableViewCell", forIndexPath: indexPath) as! CommunityTableViewCell
         
         // Re-enable the buttons (if they were disabled in the past)
-        cell.twitterButton.hidden = false
+        cell.twitterButton.enabled = true
         cell.emailButton.enabled = true
         
         // Get the person, their name, position, twitter, and email
@@ -98,7 +98,7 @@ class CommunityTableViewController: UITableViewController {
         
         // Disable the buttons if there are no twitter/ email info
         if twitter == "" {
-            cell.twitterButton.hidden = true
+            cell.twitterButton.enabled = false
         }
         if email == "" {
             cell.emailButton.enabled = false

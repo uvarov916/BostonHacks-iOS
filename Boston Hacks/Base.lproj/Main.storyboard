@@ -45,7 +45,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdl-AO-mJI">
-                                            <rect key="frame" x="110" y="37.5" width="466" height="23"/>
+                                            <rect key="frame" x="110" y="37" width="466" height="30"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                             <color key="textColor" red="0.54901960780000003" green="0.54901960780000003" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -56,7 +56,7 @@
                                     <constraints>
                                         <constraint firstItem="nbc-rV-E0z" firstAttribute="baseline" secondItem="AKm-mj-wQq" secondAttribute="baseline" id="2eR-6K-EgV"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="cdl-AO-mJI" secondAttribute="trailing" constant="16" id="Alt-wE-tTb"/>
-                                        <constraint firstAttribute="bottom" secondItem="cdl-AO-mJI" secondAttribute="bottom" constant="7" id="FLb-cI-XRY"/>
+                                        <constraint firstAttribute="bottom" secondItem="cdl-AO-mJI" secondAttribute="bottom" id="FLb-cI-XRY"/>
                                         <constraint firstItem="hgq-aM-Ytd" firstAttribute="top" secondItem="hn5-pW-qQS" secondAttribute="topMargin" constant="7" id="IU7-ly-F0B"/>
                                         <constraint firstItem="hgq-aM-Ytd" firstAttribute="leading" secondItem="hn5-pW-qQS" secondAttribute="leading" constant="110" id="Q0u-xd-HSW"/>
                                         <constraint firstItem="cdl-AO-mJI" firstAttribute="top" secondItem="hgq-aM-Ytd" secondAttribute="bottom" constant="2" id="RoW-J3-oim"/>
@@ -101,7 +101,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mSr-cb-B8D">
-                                            <rect key="frame" x="281.5" y="11" width="37.5" height="18"/>
+                                            <rect key="frame" x="282" y="11" width="37.5" height="18"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -128,6 +128,32 @@
                                 <connections>
                                     <outlet property="headerLabel" destination="mSr-cb-B8D" id="vGm-Sa-Lki"/>
                                 </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SpacingCell" rowHeight="15" id="Zb7-Uq-FPD" customClass="EventsTableViewCustomHeaderCell" customModule="Boston_Hacks" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="200" width="600" height="15"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zb7-Uq-FPD" id="dYX-lz-DfD">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="14.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nKd-qJ-I0u">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="15"/>
+                                            <animations/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="15" id="Wgn-GD-tgf"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <animations/>
+                                    <constraints>
+                                        <constraint firstItem="nKd-qJ-I0u" firstAttribute="top" secondItem="dYX-lz-DfD" secondAttribute="top" id="BDD-lG-RGO"/>
+                                        <constraint firstItem="nKd-qJ-I0u" firstAttribute="leading" secondItem="dYX-lz-DfD" secondAttribute="leading" id="CzM-0F-84Q"/>
+                                        <constraint firstAttribute="bottom" secondItem="nKd-qJ-I0u" secondAttribute="bottom" id="PZA-qt-RZ1"/>
+                                        <constraint firstAttribute="trailing" secondItem="nKd-qJ-I0u" secondAttribute="trailing" id="T8X-h8-GZb"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <animations/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -262,7 +288,9 @@
                                                 <constraint firstAttribute="width" constant="40" id="DT3-8T-hxP"/>
                                                 <constraint firstAttribute="height" constant="40" id="JFi-Yu-fck"/>
                                             </constraints>
-                                            <state key="normal" image="Email"/>
+                                            <state key="normal" image="email_icon"/>
+                                            <state key="disabled" image="email_icon_disabled"/>
+                                            <state key="highlighted" image="email_icon_filled"/>
                                         </button>
                                         <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JYf-Hh-4Ks">
                                             <rect key="frame" x="490" y="18" width="40" height="40"/>
@@ -271,7 +299,10 @@
                                                 <constraint firstAttribute="height" constant="40" id="5d2-UV-7Wi"/>
                                                 <constraint firstAttribute="width" constant="40" id="yGk-0F-umU"/>
                                             </constraints>
-                                            <state key="normal" image="Twitter"/>
+                                            <state key="normal" image="twitter_icon"/>
+                                            <state key="disabled" image="twitter_icon_disabled"/>
+                                            <state key="selected" image="twitter_icon_filled"/>
+                                            <state key="highlighted" image="twitter_icon_filled"/>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="751" text="Andew Hoang" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ODt-v0-LP6">
                                             <rect key="frame" x="20" y="18" width="462" height="21"/>
@@ -519,10 +550,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Email" width="22" height="18"/>
-        <image name="Twitter" width="25" height="20"/>
         <image name="announcements_icon" width="27" height="25"/>
         <image name="announcements_icon_filled" width="27" height="25"/>
+        <image name="email_icon" width="40" height="40"/>
+        <image name="email_icon_disabled" width="40" height="40"/>
+        <image name="email_icon_filled" width="40" height="40"/>
         <image name="map" width="1128" height="1184"/>
         <image name="map_icon" width="25" height="25"/>
         <image name="map_icon_filled" width="25" height="25"/>
@@ -531,5 +563,8 @@
         <image name="schedule_icon" width="24" height="25"/>
         <image name="schedule_icon_filled" width="24" height="25"/>
         <image name="slack_header" width="375" height="244"/>
+        <image name="twitter_icon" width="40" height="40"/>
+        <image name="twitter_icon_disabled" width="40" height="40"/>
+        <image name="twitter_icon_filled" width="40" height="40"/>
     </resources>
 </document>

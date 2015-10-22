@@ -9,9 +9,6 @@
 import UIKit
 import Parse
 
-
-
-
 class AnnouncementsTableViewController: UITableViewController {
     
     // MARK: VARIABLES

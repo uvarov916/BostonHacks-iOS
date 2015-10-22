@@ -49,7 +49,7 @@ class EventsTableViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return tableData[section].count
+        return tableData[section].count + 2
     }
     
     
@@ -72,41 +72,47 @@ class EventsTableViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("EventCell", forIndexPath: indexPath) as! EventTableViewCell
-        
-        // Get event and details about event
-        let event = self.tableData[indexPath.section][indexPath.row]
-        var title = event["title"] as! String
-        var location = event["location"] as! String
-        
-        // Handle empty title
-        if title == "" {
-            title = "No title"
+        if indexPath.row == 0 || (indexPath.row == tableData[indexPath.section].count + 1) {
+            let cell = tableView.dequeueReusableCellWithIdentifier("SpacingCell", forIndexPath: indexPath)
+            return cell
         }
-        if location == "" {
-            location = " "
+        else {
+            let cell = tableView.dequeueReusableCellWithIdentifier("EventCell", forIndexPath: indexPath) as! EventTableViewCell
+            
+            // Get event and details about event
+            let event = self.tableData[indexPath.section][indexPath.row-1]
+            var title = event["title"] as! String
+            var location = event["location"] as! String
+            
+            // Handle empty title
+            if title == "" {
+                title = "No title"
+            }
+            if location == "" {
+                location = " "
+            }
+            
+            // Get time of event
+            let unformattedDate = event["date"] as! NSDate
+            let dateTimeFormatter = NSDateFormatter()
+            dateTimeFormatter.timeZone = NSTimeZone(name: "UTC")
+            dateTimeFormatter.dateFormat = "h:mm"
+            let time = dateTimeFormatter.stringFromDate(unformattedDate)
+            
+            // Get time period
+            let dateDayNightFormatter = NSDateFormatter()
+            dateDayNightFormatter.timeZone = NSTimeZone(name: "UTC")
+            dateDayNightFormatter.dateFormat = "a"
+            let dayNight = dateDayNightFormatter.stringFromDate(unformattedDate)
+            
+            // Display information in cells
+            cell.eventLocation.text = location
+            cell.eventTitle.text = title
+            cell.eventTime.text = time
+            cell.eventDayNight.text = dayNight
+            
+            return cell
         }
-        
-        // Get time of event
-        let unformattedDate = event["date"] as! NSDate
-        let dateTimeFormatter = NSDateFormatter()
-        dateTimeFormatter.timeZone = NSTimeZone(name: "UTC")
-        dateTimeFormatter.dateFormat = "h:mm"
-        let time = dateTimeFormatter.stringFromDate(unformattedDate)
-        
-        // Get time period
-        let dateDayNightFormatter = NSDateFormatter()
-        dateDayNightFormatter.timeZone = NSTimeZone(name: "UTC")
-        dateDayNightFormatter.dateFormat = "a"
-        let dayNight = dateDayNightFormatter.stringFromDate(unformattedDate)
-        
-        // Display information in cells
-        cell.eventLocation.text = location
-        cell.eventTitle.text = title
-        cell.eventTime.text = time
-        cell.eventDayNight.text = dayNight
-        
-        return cell
     }
     
     // MARK: SERVER COMMUNICATION
