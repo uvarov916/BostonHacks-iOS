@@ -49,10 +49,24 @@ class AnnouncementsTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("AnnouncementCell", forIndexPath: indexPath) as! AnnouncementTableViewCell
         
-        // Get details about announcement
+        // Get the announcement for the current row
         let announcement = tableData[indexPath.row]
-        let announcementTitle = announcement["title"] as! String
-        let description = announcement["description"] as! String
+        
+        // Get the title for the current announcement
+        var announcementTitle = "No title"
+        if let tempAnnouncementTitle = announcement["title"] {
+            if tempAnnouncementTitle as! String != "" {
+                announcementTitle = tempAnnouncementTitle as! String
+            }
+        }
+        
+        // Get the description for the current announcement
+        var announcementDescription = "No description"
+        if let tempAnnouncementDescription = announcement["description"] {
+            announcementDescription = tempAnnouncementDescription as! String
+        }
+        
+        // Get the time the current announcement was posted
         let timePosted =  announcement.createdAt
         let timeSincePosted = NSDate().offsetFrom(timePosted!!)
         
@@ -63,7 +77,7 @@ class AnnouncementsTableViewController: UITableViewController {
         
         // Display details in cell
         cell.announcementTile.text = announcementTitle
-        cell.announcementDescription.text = description
+        cell.announcementDescription.text = announcementDescription
         cell.announcementTime.text = timeSincePosted
 
         return cell

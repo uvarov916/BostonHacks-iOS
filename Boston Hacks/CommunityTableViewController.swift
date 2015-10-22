@@ -71,36 +71,52 @@ class CommunityTableViewController: UITableViewController {
         cell.twitterButton.enabled = true
         cell.emailButton.enabled = true
         
-        // Get the person, their name, position, twitter, and email
-        let person = tableData[indexPath.row] 
-        var name = person["name"] as! String
-        var role = person["role"] as! String
-        let twitter = person["twitter"] as? String
-        let email = person["email"] as? String
-        
-        // Handle empty name and role
-        if name == "" {
-            name = "No name"
-        }
-        if role == "" {
-            role = "No role"
-        }
-        
-        // Update the cell accordingly
-        cell.personNameLabel.text = name
-        cell.personRoleLabel.text = role
-        
         // Update the button actions accordingly
         cell.twitterButton.addTarget(self, action: "twitterButtonDidPress:", forControlEvents: .TouchUpInside)
         cell.twitterButton.tag = indexPath.row
         cell.emailButton.addTarget(self, action: "emailButtonDidPress:", forControlEvents: .TouchUpInside)
         cell.emailButton.tag = indexPath.row
         
-        // Disable the buttons if there are no twitter/ email info
-        if twitter == "" {
+        // Get the person for the current row
+        let person = tableData[indexPath.row]
+        
+        // Get the name of the current person
+        var personName = "No name"
+        if let tempPersonName = person["name"] {
+            if tempPersonName as! String != "" {
+                personName = tempPersonName as! String
+            }
+        }
+        
+        // Get the role of the current person
+        var personRole = "No role"
+        if let tempPersonRole = person["role"] {
+            if tempPersonRole as! String != "" {
+                personRole = tempPersonRole as! String
+            }
+        }
+        
+        // Get the twitter handle of the correct person
+        var personTwitter = ""
+        if let tempPersonTwitter = person["twitter"] {
+            personTwitter = tempPersonTwitter as! String
+        }
+        
+        // Get the email address of the current person
+        var personEmail = ""
+        if let tempPersonEmail = person["email"] {
+            personEmail = tempPersonEmail as! String
+        }
+        
+        // Display the name and role in the cell
+        cell.personNameLabel.text = personName
+        cell.personRoleLabel.text = personRole
+        
+        // Disable the buttons if there is no twitter/ email info
+        if personTwitter == "" {
             cell.twitterButton.enabled = false
         }
-        if email == "" {
+        if personEmail == "" {
             cell.emailButton.enabled = false
         }
         

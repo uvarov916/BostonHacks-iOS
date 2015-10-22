@@ -79,17 +79,23 @@ class EventsTableViewController: UITableViewController {
         else {
             let cell = tableView.dequeueReusableCellWithIdentifier("EventCell", forIndexPath: indexPath) as! EventTableViewCell
             
-            // Get event and details about event
+            // Get event for current row
             let event = self.tableData[indexPath.section][indexPath.row-1]
-            var title = event["title"] as! String
-            var location = event["location"] as! String
             
-            // Handle empty title
-            if title == "" {
-                title = "No title"
+            // Get title for current event
+            var eventTitle = "No title"
+            if let tempEventTitle = event["title"] {
+                if tempEventTitle as! String != "" {
+                    eventTitle = tempEventTitle as! String
+                }
             }
-            if location == "" {
-                location = " "
+            
+            // Get location for current event
+            var eventLocation = " "
+            if let tempEventLocation = event["location"] {
+                if tempEventLocation as! String != "" {
+                    eventLocation = tempEventLocation as! String
+                }
             }
             
             // Get time of event
@@ -106,8 +112,8 @@ class EventsTableViewController: UITableViewController {
             let dayNight = dateDayNightFormatter.stringFromDate(unformattedDate)
             
             // Display information in cells
-            cell.eventLocation.text = location
-            cell.eventTitle.text = title
+            cell.eventLocation.text = eventLocation
+            cell.eventTitle.text = eventTitle
             cell.eventTime.text = time
             cell.eventDayNight.text = dayNight
             
