@@ -85,6 +85,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28055A331BD8927B004119C2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6622A7651BC9189B002B673A /* AnnouncementsTableViewController.swift */,
+				666441561BCCEA100065F0FA /* EventsTableViewController.swift */,
+				668DEFC91BD61FE600BBEEFD /* CommunityTableViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		28055A341BD89282004119C2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				66DC19C81BD21F1800D93CF2 /* EventsTableViewCustomHeaderCell.swift */,
+				668D757F1BCB709500914A72 /* AnnouncementTableViewCell.swift */,
+				666441541BCCE9F40065F0FA /* EventTableViewCell.swift */,
+				668DEFCA1BD61FE600BBEEFD /* CommunityTableViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		28055A351BD89286004119C2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6622A73A1BC90F33002B673A /* AppDelegate.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		28055A361BD8928C004119C2 /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				6622A73E1BC90F33002B673A /* Main.storyboard */,
+				6622A7431BC90F33002B673A /* LaunchScreen.storyboard */,
+			);
+			name = XIBs;
+			sourceTree = "<group>";
+		};
+		28055A371BD89295004119C2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				668DEFC31BD60B2100BBEEFD /* NSDateExtension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		28055A381BD8929C004119C2 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				6622A7411BC90F33002B673A /* Assets.xcassets */,
+				6622A7461BC90F33002B673A /* Info.plist */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
 		6622A72E1BC90F33002B673A = {
 			isa = PBXGroup;
 			children = (
@@ -104,19 +159,12 @@
 		6622A7391BC90F33002B673A /* Boston Hacks */ = {
 			isa = PBXGroup;
 			children = (
-				6622A73E1BC90F33002B673A /* Main.storyboard */,
-				66DC19C81BD21F1800D93CF2 /* EventsTableViewCustomHeaderCell.swift */,
-				6622A73A1BC90F33002B673A /* AppDelegate.swift */,
-				6622A7651BC9189B002B673A /* AnnouncementsTableViewController.swift */,
-				668DEFC31BD60B2100BBEEFD /* NSDateExtension.swift */,
-				668D757F1BCB709500914A72 /* AnnouncementTableViewCell.swift */,
-				666441561BCCEA100065F0FA /* EventsTableViewController.swift */,
-				666441541BCCE9F40065F0FA /* EventTableViewCell.swift */,
-				668DEFC91BD61FE600BBEEFD /* CommunityTableViewController.swift */,
-				668DEFCA1BD61FE600BBEEFD /* CommunityTableViewCell.swift */,
-				6622A7411BC90F33002B673A /* Assets.xcassets */,
-				6622A7431BC90F33002B673A /* LaunchScreen.storyboard */,
-				6622A7461BC90F33002B673A /* Info.plist */,
+				28055A371BD89295004119C2 /* Extensions */,
+				28055A351BD89286004119C2 /* Models */,
+				28055A341BD89282004119C2 /* Views */,
+				28055A331BD8927B004119C2 /* Controllers */,
+				28055A361BD8928C004119C2 /* XIBs */,
+				28055A381BD8929C004119C2 /* Assets */,
 				6622A7501BC914B8002B673A /* Frameworks */,
 			);
 			path = "Boston Hacks";
