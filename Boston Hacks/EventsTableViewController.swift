@@ -84,7 +84,7 @@ class EventsTableViewController: UITableViewController {
             
             // Get title for current event
             var eventTitle = "No title"
-            if let tempEventTitle = event["title"] {
+            if let tempEventTitle = event["title"]! {
                 if tempEventTitle as! String != "" {
                     eventTitle = tempEventTitle as! String
                 }
@@ -92,7 +92,7 @@ class EventsTableViewController: UITableViewController {
             
             // Get location for current event
             var eventLocation = " "
-            if let tempEventLocation = event["location"] {
+            if let tempEventLocation = event["location"]! {
                 if tempEventLocation as! String != "" {
                     eventLocation = tempEventLocation as! String
                 }

@@ -31,7 +31,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Registration" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgq-aM-Ytd">
-                                            <rect key="frame" x="110" y="15" width="466" height="20.5"/>
+                                            <rect key="frame" x="110" y="15" width="474" height="20.5"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -45,7 +45,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdl-AO-mJI">
-                                            <rect key="frame" x="110" y="37" width="466" height="30"/>
+                                            <rect key="frame" x="110" y="37" width="474" height="30"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                             <color key="textColor" red="0.54901960780000003" green="0.54901960780000003" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -55,12 +55,12 @@
                                     <animations/>
                                     <constraints>
                                         <constraint firstItem="nbc-rV-E0z" firstAttribute="baseline" secondItem="AKm-mj-wQq" secondAttribute="baseline" id="2eR-6K-EgV"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="cdl-AO-mJI" secondAttribute="trailing" constant="16" id="Alt-wE-tTb"/>
+                                        <constraint firstAttribute="trailing" secondItem="cdl-AO-mJI" secondAttribute="trailing" constant="16" id="Alt-wE-tTb"/>
                                         <constraint firstAttribute="bottom" secondItem="cdl-AO-mJI" secondAttribute="bottom" id="FLb-cI-XRY"/>
                                         <constraint firstItem="hgq-aM-Ytd" firstAttribute="top" secondItem="hn5-pW-qQS" secondAttribute="topMargin" constant="7" id="IU7-ly-F0B"/>
                                         <constraint firstItem="hgq-aM-Ytd" firstAttribute="leading" secondItem="hn5-pW-qQS" secondAttribute="leading" constant="110" id="Q0u-xd-HSW"/>
                                         <constraint firstItem="cdl-AO-mJI" firstAttribute="top" secondItem="hgq-aM-Ytd" secondAttribute="bottom" constant="2" id="RoW-J3-oim"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="hgq-aM-Ytd" secondAttribute="trailing" constant="16" id="UIE-TF-C5C"/>
+                                        <constraint firstAttribute="trailing" secondItem="hgq-aM-Ytd" secondAttribute="trailing" constant="16" id="UIE-TF-C5C"/>
                                         <constraint firstItem="nbc-rV-E0z" firstAttribute="leading" secondItem="hn5-pW-qQS" secondAttribute="leading" constant="64" id="a9C-IO-OcY"/>
                                         <constraint firstItem="nbc-rV-E0z" firstAttribute="leading" secondItem="AKm-mj-wQq" secondAttribute="trailing" constant="3.5" id="moU-OX-brU"/>
                                         <constraint firstItem="cdl-AO-mJI" firstAttribute="leading" secondItem="hn5-pW-qQS" secondAttribute="leading" constant="110" id="wep-dn-fkV"/>

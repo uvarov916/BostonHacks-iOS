@@ -54,7 +54,7 @@ class AnnouncementsTableViewController: UITableViewController {
         
         // Get the title for the current announcement
         var announcementTitle = "No title"
-        if let tempAnnouncementTitle = announcement["title"] {
+        if let tempAnnouncementTitle = announcement["title"]! {
             if tempAnnouncementTitle as! String != "" {
                 announcementTitle = tempAnnouncementTitle as! String
             }
@@ -62,7 +62,7 @@ class AnnouncementsTableViewController: UITableViewController {
         
         // Get the description for the current announcement
         var announcementDescription = "No description"
-        if let tempAnnouncementDescription = announcement["description"] {
+        if let tempAnnouncementDescription = announcement["description"]! {
             announcementDescription = tempAnnouncementDescription as! String
         }
         
