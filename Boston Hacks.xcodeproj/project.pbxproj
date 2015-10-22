@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		661A42331BD84B5C003D8D77 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 661A42311BD84B5C003D8D77 /* Bolts.framework */; };
-		661A42341BD84B5C003D8D77 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 661A42321BD84B5C003D8D77 /* Parse.framework */; };
+		660B404A1BD84EB600CCC073 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660B40481BD84EB600CCC073 /* Bolts.framework */; };
+		660B404B1BD84EB600CCC073 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660B40491BD84EB600CCC073 /* Parse.framework */; };
 		6622A73B1BC90F33002B673A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6622A73A1BC90F33002B673A /* AppDelegate.swift */; };
 		6622A7401BC90F33002B673A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6622A73E1BC90F33002B673A /* Main.storyboard */; };
 		6622A7421BC90F33002B673A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6622A7411BC90F33002B673A /* Assets.xcassets */; };
@@ -34,8 +34,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		661A42311BD84B5C003D8D77 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
-		661A42321BD84B5C003D8D77 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		660B40481BD84EB600CCC073 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		660B40491BD84EB600CCC073 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		6622A7371BC90F33002B673A /* Boston Hacks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Boston Hacks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6622A73A1BC90F33002B673A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6622A73F1BC90F33002B673A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -75,9 +75,9 @@
 				6622A75A1BC915E8002B673A /* QuartzCore.framework in Frameworks */,
 				6622A7581BC915DF002B673A /* CoreLocation.framework in Frameworks */,
 				6622A7561BC915D6002B673A /* CoreGraphics.framework in Frameworks */,
-				661A42331BD84B5C003D8D77 /* Bolts.framework in Frameworks */,
+				660B404A1BD84EB600CCC073 /* Bolts.framework in Frameworks */,
 				6622A7541BC915CE002B673A /* CFNetwork.framework in Frameworks */,
-				661A42341BD84B5C003D8D77 /* Parse.framework in Frameworks */,
+				660B404B1BD84EB600CCC073 /* Parse.framework in Frameworks */,
 				6622A7521BC915BC002B673A /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -125,8 +125,8 @@
 		6622A7501BC914B8002B673A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				661A42311BD84B5C003D8D77 /* Bolts.framework */,
-				661A42321BD84B5C003D8D77 /* Parse.framework */,
+				660B40481BD84EB600CCC073 /* Bolts.framework */,
+				660B40491BD84EB600CCC073 /* Parse.framework */,
 				6622A7631BC91633002B673A /* libz.tbd */,
 				6622A7611BC9162C002B673A /* libsqlite3.tbd */,
 				6622A75F1BC915FE002B673A /* SystemConfiguration.framework */,
@@ -176,7 +176,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6622A7321BC90F33002B673A /* Build configuration list for PBXProject "BostonHacks" */;
+			buildConfigurationList = 6622A7321BC90F33002B673A /* Build configuration list for PBXProject "Boston Hacks" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -335,36 +335,13 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Boston",
-					Hacks,
-					"$(PROJECT_DIR)/Boston",
-					Hacks,
-					"$(PROJECT_DIR)/Boston",
-					Hacks,
-					"$(PROJECT_DIR)/Boston",
-					Hacks/Frameworks,
-					"$(PROJECT_DIR)/Boston",
-					Hacks/Frameworks,
-					"$(PROJECT_DIR)/Boston",
-					Hacks,
-					"$(PROJECT_DIR)/Boston",
-					Hacks,
-					"$(PROJECT_DIR)/Boston",
-					Hacks,
-					"$(PROJECT_DIR)/Boston",
-					Hacks,
-					"$(PROJECT_DIR)/Boston",
-					Hacks,
-					"$(PROJECT_DIR)/Boston",
-					Hacks,
-					"$(PROJECT_DIR)/Boston",
-					Hacks,
+					"$(PROJECT_DIR)/**",
 				);
 				INFOPLIST_FILE = "Boston Hacks/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.ivn.Boston-Hacks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Boston Hacks";
 				PROVISIONING_PROFILE = "a7327e66-1d2a-458c-b099-7027d0af020f";
 			};
 			name = Debug;
@@ -377,36 +354,13 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Boston",
-					Hacks,
-					"$(PROJECT_DIR)/Boston",
-					Hacks,
-					"$(PROJECT_DIR)/Boston",
-					Hacks,
-					"$(PROJECT_DIR)/Boston",
-					Hacks/Frameworks,
-					"$(PROJECT_DIR)/Boston",
-					Hacks/Frameworks,
-					"$(PROJECT_DIR)/Boston",
-					Hacks,
-					"$(PROJECT_DIR)/Boston",
-					Hacks,
-					"$(PROJECT_DIR)/Boston",
-					Hacks,
-					"$(PROJECT_DIR)/Boston",
-					Hacks,
-					"$(PROJECT_DIR)/Boston",
-					Hacks,
-					"$(PROJECT_DIR)/Boston",
-					Hacks,
-					"$(PROJECT_DIR)/Boston",
-					Hacks,
+					"$(PROJECT_DIR)/**",
 				);
 				INFOPLIST_FILE = "Boston Hacks/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.ivn.Boston-Hacks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Boston Hacks";
 				PROVISIONING_PROFILE = "a7327e66-1d2a-458c-b099-7027d0af020f";
 			};
 			name = Release;
@@ -414,7 +368,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6622A7321BC90F33002B673A /* Build configuration list for PBXProject "BostonHacks" */ = {
+		6622A7321BC90F33002B673A /* Build configuration list for PBXProject "Boston Hacks" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6622A7471BC90F33002B673A /* Debug */,

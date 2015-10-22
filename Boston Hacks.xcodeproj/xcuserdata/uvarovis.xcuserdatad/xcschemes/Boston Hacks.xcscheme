@@ -17,7 +17,7 @@
                BlueprintIdentifier = "6622A7361BC90F33002B673A"
                BuildableName = "Boston Hacks.app"
                BlueprintName = "Boston Hacks"
-               ReferencedContainer = "container:BostonHacks.xcodeproj">
+               ReferencedContainer = "container:Boston Hacks.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
             BlueprintIdentifier = "6622A7361BC90F33002B673A"
             BuildableName = "Boston Hacks.app"
             BlueprintName = "Boston Hacks"
-            ReferencedContainer = "container:BostonHacks.xcodeproj">
+            ReferencedContainer = "container:Boston Hacks.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -58,7 +58,7 @@
             BlueprintIdentifier = "6622A7361BC90F33002B673A"
             BuildableName = "Boston Hacks.app"
             BlueprintName = "Boston Hacks"
-            ReferencedContainer = "container:BostonHacks.xcodeproj">
+            ReferencedContainer = "container:Boston Hacks.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -77,7 +77,7 @@
             BlueprintIdentifier = "6622A7361BC90F33002B673A"
             BuildableName = "Boston Hacks.app"
             BlueprintName = "Boston Hacks"
-            ReferencedContainer = "container:BostonHacks.xcodeproj">
+            ReferencedContainer = "container:Boston Hacks.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
