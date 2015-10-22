@@ -173,6 +173,14 @@
 					6622A7361BC90F33002B673A = {
 						CreatedOnToolsVersion = 7.0.1;
 						DevelopmentTeam = T36V9EZTBX;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
