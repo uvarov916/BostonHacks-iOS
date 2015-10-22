@@ -19,7 +19,6 @@
 		6622A7581BC915DF002B673A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6622A7571BC915DF002B673A /* CoreLocation.framework */; };
 		6622A75A1BC915E8002B673A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6622A7591BC915E8002B673A /* QuartzCore.framework */; };
 		6622A75C1BC915EF002B673A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6622A75B1BC915EF002B673A /* Security.framework */; };
-		6622A75E1BC915F5002B673A /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6622A75D1BC915F5002B673A /* StoreKit.framework */; };
 		6622A7601BC915FE002B673A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6622A75F1BC915FE002B673A /* SystemConfiguration.framework */; };
 		6622A7621BC9162C002B673A /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6622A7611BC9162C002B673A /* libsqlite3.tbd */; };
 		6622A7641BC91633002B673A /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6622A7631BC91633002B673A /* libz.tbd */; };
@@ -48,7 +47,6 @@
 		6622A7571BC915DF002B673A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		6622A7591BC915E8002B673A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		6622A75B1BC915EF002B673A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		6622A75D1BC915F5002B673A /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		6622A75F1BC915FE002B673A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		6622A7611BC9162C002B673A /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		6622A7631BC91633002B673A /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
@@ -70,7 +68,6 @@
 				6622A7641BC91633002B673A /* libz.tbd in Frameworks */,
 				6622A7621BC9162C002B673A /* libsqlite3.tbd in Frameworks */,
 				6622A7601BC915FE002B673A /* SystemConfiguration.framework in Frameworks */,
-				6622A75E1BC915F5002B673A /* StoreKit.framework in Frameworks */,
 				6622A75C1BC915EF002B673A /* Security.framework in Frameworks */,
 				6622A75A1BC915E8002B673A /* QuartzCore.framework in Frameworks */,
 				6622A7581BC915DF002B673A /* CoreLocation.framework in Frameworks */,
@@ -178,7 +175,6 @@
 				6622A7631BC91633002B673A /* libz.tbd */,
 				6622A7611BC9162C002B673A /* libsqlite3.tbd */,
 				6622A75F1BC915FE002B673A /* SystemConfiguration.framework */,
-				6622A75D1BC915F5002B673A /* StoreKit.framework */,
 				6622A75B1BC915EF002B673A /* Security.framework */,
 				6622A7591BC915E8002B673A /* QuartzCore.framework */,
 				6622A7571BC915DF002B673A /* CoreLocation.framework */,
@@ -220,13 +216,16 @@
 				TargetAttributes = {
 					6622A7361BC90F33002B673A = {
 						CreatedOnToolsVersion = 7.0.1;
-						DevelopmentTeam = T36V9EZTBX;
+						DevelopmentTeam = W96SY39A42;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
 							};
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
 							com.apple.Push = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -398,7 +397,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.ivn.Boston-Hacks";
 				PRODUCT_NAME = "Boston Hacks";
-				PROVISIONING_PROFILE = "a7327e66-1d2a-458c-b099-7027d0af020f";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -417,7 +416,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.ivn.Boston-Hacks";
 				PRODUCT_NAME = "Boston Hacks";
-				PROVISIONING_PROFILE = "a7327e66-1d2a-458c-b099-7027d0af020f";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
