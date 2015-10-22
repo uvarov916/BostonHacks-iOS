@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28BD8D191BD8C0D80012DB7F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BD8D181BD8C0D80012DB7F /* MapViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		660B404A1BD84EB600CCC073 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660B40481BD84EB600CCC073 /* Bolts.framework */; };
 		660B404B1BD84EB600CCC073 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660B40491BD84EB600CCC073 /* Parse.framework */; };
 		6622A73B1BC90F33002B673A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6622A73A1BC90F33002B673A /* AppDelegate.swift */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		28BD8D181BD8C0D80012DB7F /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		660B40481BD84EB600CCC073 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		660B40491BD84EB600CCC073 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		6622A7371BC90F33002B673A /* Boston Hacks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Boston Hacks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,6 +89,7 @@
 			children = (
 				6622A7651BC9189B002B673A /* AnnouncementsTableViewController.swift */,
 				666441561BCCEA100065F0FA /* EventsTableViewController.swift */,
+				28BD8D181BD8C0D80012DB7F /* MapViewController.swift */,
 				668DEFC91BD61FE600BBEEFD /* CommunityTableViewController.swift */,
 			);
 			name = Controllers;
@@ -270,6 +273,7 @@
 				666441551BCCE9F40065F0FA /* EventTableViewCell.swift in Sources */,
 				6622A7661BC9189B002B673A /* AnnouncementsTableViewController.swift in Sources */,
 				668DEFC41BD60B2100BBEEFD /* NSDateExtension.swift in Sources */,
+				28BD8D191BD8C0D80012DB7F /* MapViewController.swift in Sources */,
 				66DC19C91BD21F1800D93CF2 /* EventsTableViewCustomHeaderCell.swift in Sources */,
 				6622A73B1BC90F33002B673A /* AppDelegate.swift in Sources */,
 				668DEFCB1BD61FE600BBEEFD /* CommunityTableViewController.swift in Sources */,

@@ -3,36 +3,37 @@
     {
       "size" : "29x29",
       "idiom" : "iphone",
-      "filename" : "58 - Settings.png",
+      "filename" : "Settings@2x.png",
       "scale" : "2x"
     },
     {
-      "idiom" : "iphone",
       "size" : "29x29",
+      "idiom" : "iphone",
+      "filename" : "Settings@3x.png",
       "scale" : "3x"
     },
     {
       "size" : "40x40",
       "idiom" : "iphone",
-      "filename" : "80 - Spotlight.png",
+      "filename" : "Spotlight@2x.png",
       "scale" : "2x"
     },
     {
       "size" : "40x40",
       "idiom" : "iphone",
-      "filename" : "120 - iPhone-1.png",
+      "filename" : "Spotlight@3x.png",
       "scale" : "3x"
     },
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "120 - iPhone.png",
+      "filename" : "App@2x.png",
       "scale" : "2x"
     },
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "180 - iPhone 6 Plus.png",
+      "filename" : "App@3x.png",
       "scale" : "3x"
     }
   ],

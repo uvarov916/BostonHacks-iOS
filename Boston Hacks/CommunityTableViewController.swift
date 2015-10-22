@@ -12,6 +12,8 @@ import Social
 
 class CommunityTableViewController: UITableViewController {
     
+    // MARK: VARIABLES
+    
     @IBOutlet weak var joinSlackButton: UIButton!
     
     var tableData: [PFObject] = []
@@ -46,13 +48,13 @@ class CommunityTableViewController: UITableViewController {
                     // Present an error to the user if there are no objects
                     self.presentErrorWithDescription("No people found")
                 }
-                
-                self.activityIndicator.stopAnimating()
-                self.tableView.reloadData()
             } else {
                 // Present an error to the user if there was an error with the database
                 self.presentErrorWithDescription(error!.localizedDescription)
             }
+            
+            self.activityIndicator.stopAnimating()
+            self.tableView.reloadData()
         }
     }
     
@@ -66,7 +68,7 @@ class CommunityTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("CommunityTableViewCell", forIndexPath: indexPath) as! CommunityTableViewCell
         
         // Re-enable the buttons (if they were disabled in the past)
-        cell.twitterButton.enabled = true
+        cell.twitterButton.hidden = false
         cell.emailButton.enabled = true
         
         // Get the person, their name, position, twitter, and email
@@ -76,7 +78,7 @@ class CommunityTableViewController: UITableViewController {
         let twitter = person["twitter"] as? String
         let email = person["email"] as? String
         
-        // Replace the name/ role if there is no data for it
+        // Handle empty name and role
         if name == "" {
             name = "No name"
         }
