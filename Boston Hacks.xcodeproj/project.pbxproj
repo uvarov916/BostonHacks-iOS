@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		28BD8D191BD8C0D80012DB7F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BD8D181BD8C0D80012DB7F /* MapViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		28BD8D191BD8C0D80012DB7F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BD8D181BD8C0D80012DB7F /* MapViewController.swift */; };
 		660B404A1BD84EB600CCC073 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660B40481BD84EB600CCC073 /* Bolts.framework */; };
 		660B404B1BD84EB600CCC073 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660B40491BD84EB600CCC073 /* Parse.framework */; };
 		6622A73B1BC90F33002B673A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6622A73A1BC90F33002B673A /* AppDelegate.swift */; };
@@ -159,12 +159,12 @@
 		6622A7391BC90F33002B673A /* Boston Hacks */ = {
 			isa = PBXGroup;
 			children = (
-				28055A371BD89295004119C2 /* Extensions */,
+				28055A361BD8928C004119C2 /* XIBs */,
 				28055A351BD89286004119C2 /* Models */,
 				28055A341BD89282004119C2 /* Views */,
 				28055A331BD8927B004119C2 /* Controllers */,
-				28055A361BD8928C004119C2 /* XIBs */,
 				28055A381BD8929C004119C2 /* Assets */,
+				28055A371BD89295004119C2 /* Extensions */,
 				6622A7501BC914B8002B673A /* Frameworks */,
 			);
 			path = "Boston Hacks";
@@ -219,7 +219,7 @@
 				TargetAttributes = {
 					6622A7361BC90F33002B673A = {
 						CreatedOnToolsVersion = 7.0.1;
-						DevelopmentTeam = W96SY39A42;
+						DevelopmentTeam = T36V9EZTBX;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -228,7 +228,7 @@
 								enabled = 0;
 							};
 							com.apple.Push = {
-								enabled = 0;
+								enabled = 1;
 							};
 						};
 					};
@@ -401,7 +401,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.ivn.Boston-Hacks";
 				PRODUCT_NAME = "Boston Hacks";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "a7327e66-1d2a-458c-b099-7027d0af020f";
 			};
 			name = Debug;
 		};
@@ -420,7 +420,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.ivn.Boston-Hacks";
 				PRODUCT_NAME = "Boston Hacks";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "a7327e66-1d2a-458c-b099-7027d0af020f";
 			};
 			name = Release;
 		};

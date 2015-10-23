@@ -70,11 +70,6 @@ class AnnouncementsTableViewController: UITableViewController {
         let timePosted =  announcement.createdAt
         let timeSincePosted = NSDate().offsetFrom(timePosted!!)
         
-        // Handle empty title
-        if announcementTitle == "" {
-            announcementTitle == "No title"
-        }
-        
         // Display details in cell
         cell.announcementTile.text = announcementTitle
         cell.announcementDescription.text = announcementDescription
